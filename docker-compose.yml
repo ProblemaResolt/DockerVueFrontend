@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  vuefront:
+    build: .
+    container_name: 'react_app'
+    working_dir: /opt/app/
+    volumes:
+      - ./:/opt/app/
+    ports:
+      - '8080:8080'
+    tty: true
