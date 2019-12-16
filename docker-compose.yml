@@ -3,7 +3,7 @@ version: '3.7'
 services:
   vuefront:
     build: .
-    container_name: 'react_app'
+    container_name: 'vue_app'
     working_dir: /opt/app/
     volumes:
       - ./:/opt/app/
